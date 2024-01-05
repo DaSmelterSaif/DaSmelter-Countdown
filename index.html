@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Countdown Timer</title>
+  </head>
+  <body>
+    <div class="timerC">
+      <img src="Logo.png" alt="DaSmelter Logo" class="logo" />
+      <h1>Contdown Timer</h1>
+      <!--The timer-->
+      <div class="container">
+        <p id="timer">00:00:00</p>
+      </div>
+      <!--Control buttons-->
+      <div class="container2">
+        <button onclick="timerStarts()">Start</button>
+        <button onclick="timerStops()">Stop</button>
+        <button onclick="timerReset()">Reset</button>
+      </div>
+      <!--Hours, Minutes, and Seconds-->
+      <div class="container3">
+        <div class="dropdown">
+          <button>Hours</button>
+          <div class="content">
+            <a href="#" onclick="changeTime(0, minutes, seconds)">0</a>
+            <a href="#" onclick="changeTime(1, minutes, seconds)">1</a>
+            <a href="#" onclick="changeTime(2, minutes, seconds)">2</a>
+            <a href="#" onclick="changeTime(3, minutes, seconds)">3</a>
+            <a href="#" onclick="changeTime(4, minutes, seconds)">4</a>
+            <a href="#" onclick="changeTime(5, minutes, seconds)">5</a>
+            <a href="#" onclick="changeTime(6, minutes, seconds)">6</a>
+            <a href="#" onclick="changeTime(7, minutes, seconds)">7</a>
+            <a href="#" onclick="changeTime(8, minutes, seconds)">8</a>
+            <a href="#" onclick="changeTime(9, minutes, seconds)">9</a>
+            <a href="#" onclick="changeTime(10, minutes, seconds)">10</a>
+            <a href="#" onclick="changeTime(11, minutes, seconds)">11</a>
+            <a href="#" onclick="changeTime(12, minutes, seconds)">12</a>
+            <a href="#" onclick="changeTime(13, minutes, seconds)">13</a>
+            <a href="#" onclick="changeTime(14, minutes, seconds)">14</a>
+            <a href="#" onclick="changeTime(15, minutes, seconds)">15</a>
+            <a href="#" onclick="changeTime(16, minutes, seconds)">16</a>
+            <a href="#" onclick="changeTime(17, minutes, seconds)">17</a>
+            <a href="#" onclick="changeTime(18, minutes, seconds)">18</a>
+            <a href="#" onclick="changeTime(19, minutes, seconds)">19</a>
+            <a href="#" onclick="changeTime(20, minutes, seconds)">20</a>
+            <a href="#" onclick="changeTime(21, minutes, seconds)">21</a>
+            <a href="#" onclick="changeTime(22, minutes, seconds)">22</a>
+            <a href="#" onclick="changeTime(23, minutes, seconds)">23</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button>Minutes</button>
+          <div class="content">
+            <a href="#" onclick="changeTime(hours, 0, seconds)">0</a>
+            <a href="#" onclick="changeTime(hours, 1, seconds)">1</a>
+            <a href="#" onclick="changeTime(hours, 2, seconds)">2</a>
+            <a href="#" onclick="changeTime(hours, 3, seconds)">3</a>
+            <a href="#" onclick="changeTime(hours, 4, seconds)">4</a>
+            <a href="#" onclick="changeTime(hours, 5, seconds)">5</a>
+            <a href="#" onclick="changeTime(hours, 6, seconds)">6</a>
+            <a href="#" onclick="changeTime(hours, 7, seconds)">7</a>
+            <a href="#" onclick="changeTime(hours, 8, seconds)">8</a>
+            <a href="#" onclick="changeTime(hours, 9, seconds)">9</a>
+            <a href="#" onclick="changeTime(hours, 10, seconds)">10</a>
+            <a href="#" onclick="changeTime(hours, 11, seconds)">11</a>
+            <a href="#" onclick="changeTime(hours, 12, seconds)">12</a>
+            <a href="#" onclick="changeTime(hours, 13, seconds)">13</a>
+            <a href="#" onclick="changeTime(hours, 14, seconds)">14</a>
+            <a href="#" onclick="changeTime(hours, 15, seconds)">15</a>
+            <a href="#" onclick="changeTime(hours, 16, seconds)">16</a>
+            <a href="#" onclick="changeTime(hours, 17, seconds)">17</a>
+            <a href="#" onclick="changeTime(hours, 18, seconds)">18</a>
+            <a href="#" onclick="changeTime(hours, 19, seconds)">19</a>
+            <a href="#" onclick="changeTime(hours, 20, seconds)">20</a>
+            <a href="#" onclick="changeTime(hours, 21, seconds)">21</a>
+            <a href="#" onclick="changeTime(hours, 22, seconds)">22</a>
+            <a href="#" onclick="changeTime(hours, 23, seconds)">23</a>
+            <a href="#" onclick="changeTime(hours, 24, seconds)">24</a>
+            <a href="#" onclick="changeTime(hours, 25, seconds)">25</a>
+            <a href="#" onclick="changeTime(hours, 26, seconds)">26</a>
+            <a href="#" onclick="changeTime(hours, 27, seconds)">27</a>
+            <a href="#" onclick="changeTime(hours, 28, seconds)">28</a>
+            <a href="#" onclick="changeTime(hours, 29, seconds)">29</a>
+            <a href="#" onclick="changeTime(hours, 30, seconds)">30</a>
+            <a href="#" onclick="changeTime(hours, 31, seconds)">31</a>
+            <a href="#" onclick="changeTime(hours, 32, seconds)">32</a>
+            <a href="#" onclick="changeTime(hours, 33, seconds)">33</a>
+            <a href="#" onclick="changeTime(hours, 34, seconds)">34</a>
+            <a href="#" onclick="changeTime(hours, 35, seconds)">35</a>
+            <a href="#" onclick="changeTime(hours, 36, seconds)">36</a>
+            <a href="#" onclick="changeTime(hours, 37, seconds)">37</a>
+            <a href="#" onclick="changeTime(hours, 38, seconds)">38</a>
+            <a href="#" onclick="changeTime(hours, 39, seconds)">39</a>
+            <a href="#" onclick="changeTime(hours, 40, seconds)">40</a>
+            <a href="#" onclick="changeTime(hours, 41, seconds)">41</a>
+            <a href="#" onclick="changeTime(hours, 42, seconds)">42</a>
+            <a href="#" onclick="changeTime(hours, 43, seconds)">43</a>
+            <a href="#" onclick="changeTime(hours, 44, seconds)">44</a>
+            <a href="#" onclick="changeTime(hours, 45, seconds)">45</a>
+            <a href="#" onclick="changeTime(hours, 46, seconds)">46</a>
+            <a href="#" onclick="changeTime(hours, 47, seconds)">47</a>
+            <a href="#" onclick="changeTime(hours, 48, seconds)">48</a>
+            <a href="#" onclick="changeTime(hours, 49, seconds)">49</a>
+            <a href="#" onclick="changeTime(hours, 50, seconds)">50</a>
+            <a href="#" onclick="changeTime(hours, 51, seconds)">51</a>
+            <a href="#" onclick="changeTime(hours, 52, seconds)">52</a>
+            <a href="#" onclick="changeTime(hours, 53, seconds)">53</a>
+            <a href="#" onclick="changeTime(hours, 54, seconds)">54</a>
+            <a href="#" onclick="changeTime(hours, 55, seconds)">55</a>
+            <a href="#" onclick="changeTime(hours, 56, seconds)">56</a>
+            <a href="#" onclick="changeTime(hours, 57, seconds)">57</a>
+            <a href="#" onclick="changeTime(hours, 58, seconds)">58</a>
+            <a href="#" onclick="changeTime(hours, 59, seconds)">59</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button>Seconds</button>
+          <div class="content">
+            <a href="#" onclick="changeTime(hours, minutes, 0)">0</a>
+            <a href="#" onclick="changeTime(hours, minutes, 1)">1</a>
+            <a href="#" onclick="changeTime(hours, minutes, 2)">2</a>
+            <a href="#" onclick="changeTime(hours, minutes, 3)">3</a>
+            <a href="#" onclick="changeTime(hours, minutes, 4)">4</a>
+            <a href="#" onclick="changeTime(hours, minutes, 5)">5</a>
+            <a href="#" onclick="changeTime(hours, minutes, 6)">6</a>
+            <a href="#" onclick="changeTime(hours, minutes, 7)">7</a>
+            <a href="#" onclick="changeTime(hours, minutes, 8)">8</a>
+            <a href="#" onclick="changeTime(hours, minutes, 9)">9</a>
+            <a href="#" onclick="changeTime(hours, minutes, 10)">10</a>
+            <a href="#" onclick="changeTime(hours, minutes, 11)">11</a>
+            <a href="#" onclick="changeTime(hours, minutes, 12)">12</a>
+            <a href="#" onclick="changeTime(hours, minutes, 13)">13</a>
+            <a href="#" onclick="changeTime(hours, minutes, 14)">14</a>
+            <a href="#" onclick="changeTime(hours, minutes, 15)">15</a>
+            <a href="#" onclick="changeTime(hours, minutes, 16)">16</a>
+            <a href="#" onclick="changeTime(hours, minutes, 17)">17</a>
+            <a href="#" onclick="changeTime(hours, minutes, 18)">18</a>
+            <a href="#" onclick="changeTime(hours, minutes, 19)">19</a>
+            <a href="#" onclick="changeTime(hours, minutes, 20)">20</a>
+            <a href="#" onclick="changeTime(hours, minutes, 21)">21</a>
+            <a href="#" onclick="changeTime(hours, minutes, 22)">22</a>
+            <a href="#" onclick="changeTime(hours, minutes, 23)">23</a>
+            <a href="#" onclick="changeTime(hours, minutes, 24)">24</a>
+            <a href="#" onclick="changeTime(hours, minutes, 25)">25</a>
+            <a href="#" onclick="changeTime(hours, minutes, 26)">26</a>
+            <a href="#" onclick="changeTime(hours, minutes, 27)">27</a>
+            <a href="#" onclick="changeTime(hours, minutes, 28)">28</a>
+            <a href="#" onclick="changeTime(hours, minutes, 29)">29</a>
+            <a href="#" onclick="changeTime(hours, minutes, 30)">30</a>
+            <a href="#" onclick="changeTime(hours, minutes, 31)">31</a>
+            <a href="#" onclick="changeTime(hours, minutes, 32)">32</a>
+            <a href="#" onclick="changeTime(hours, minutes, 33)">33</a>
+            <a href="#" onclick="changeTime(hours, minutes, 34)">34</a>
+            <a href="#" onclick="changeTime(hours, minutes, 35)">35</a>
+            <a href="#" onclick="changeTime(hours, minutes, 36)">36</a>
+            <a href="#" onclick="changeTime(hours, minutes, 37)">37</a>
+            <a href="#" onclick="changeTime(hours, minutes, 38)">38</a>
+            <a href="#" onclick="changeTime(hours, minutes, 39)">39</a>
+            <a href="#" onclick="changeTime(hours, minutes, 40)">40</a>
+            <a href="#" onclick="changeTime(hours, minutes, 41)">41</a>
+            <a href="#" onclick="changeTime(hours, minutes, 42)">42</a>
+            <a href="#" onclick="changeTime(hours, minutes, 43)">43</a>
+            <a href="#" onclick="changeTime(hours, minutes, 44)">44</a>
+            <a href="#" onclick="changeTime(hours, minutes, 45)">45</a>
+            <a href="#" onclick="changeTime(hours, minutes, 46)">46</a>
+            <a href="#" onclick="changeTime(hours, minutes, 47)">47</a>
+            <a href="#" onclick="changeTime(hours, minutes, 48)">48</a>
+            <a href="#" onclick="changeTime(hours, minutes, 49)">49</a>
+            <a href="#" onclick="changeTime(hours, minutes, 50)">50</a>
+            <a href="#" onclick="changeTime(hours, minutes, 51)">51</a>
+            <a href="#" onclick="changeTime(hours, minutes, 52)">52</a>
+            <a href="#" onclick="changeTime(hours, minutes, 53)">53</a>
+            <a href="#" onclick="changeTime(hours, minutes, 54)">54</a>
+            <a href="#" onclick="changeTime(hours, minutes, 55)">55</a>
+            <a href="#" onclick="changeTime(hours, minutes, 56)">56</a>
+            <a href="#" onclick="changeTime(hours, minutes, 57)">57</a>
+            <a href="#" onclick="changeTime(hours, minutes, 58)">58</a>
+            <a href="#" onclick="changeTime(hours, minutes, 59)">59</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="signature">
+      <p>
+        Made by <a href="https://github.com/DaSmelterSaif">DaSmelterSaif</a>
+      </p>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>

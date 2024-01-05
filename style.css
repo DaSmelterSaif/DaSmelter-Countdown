@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+div {
+  background-color: rgb(20, 20, 20);
+  color: rgb(255, 255, 255);
+}
+div h1 {
+  text-align: center;
+  font-size: 90px;
+  margin: 40px 0px;
+}
+
+div a {
+  color: white;
+}
+
+.timerC {
+  height: 500px;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+#timer {
+  background-color: rgb(0, 255, 255);
+  font-size: 90px;
+  /* max-height: 110px; */
+  transition: filter 200ms;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+#timer:hover {
+  filter: invert(1);
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.container2 button {
+  margin: 10px;
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  transition: filter 200ms;
+}
+
+.container2 button:hover {
+  filter: invert(1);
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.container3 button {
+  margin: 10px;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown button {
+  background-color: rgb(200, 200, 200);
+  border: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dropdown a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.dropdown p {
+  display: inline;
+  background-color: rgb(80, 80, 80);
+  color: rgb(255, 255, 255);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.dropdown .content {
+  display: none;
+  background-color: white;
+  position: absolute;
+  min-width: 100px;
+  box-shadow: 2px 2px 2px white;
+  max-height: 100px;
+  overflow-y: scroll;
+}
+
+.dropdown:hover .content {
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.signature {
+  height: 100px;
+  background-color: hsl(0, 0%, 30%);
+  padding: 30px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  div h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .timerC {
+    padding-top: 110px;
+  }
+}
