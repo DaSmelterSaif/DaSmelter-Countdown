@@ -3,7 +3,7 @@ let hours = 0,
   seconds = 0;
 let timer = document.getElementById("timer");
 let interval;
-let rington = new Audio("rington.mp3");
+let ringtone = new Audio("ringtone.mp3");
 
 //Adds a zero to each of the hours, minutes or seconds if
 //it's under 10. Ex: 01, 05, 09, 10
@@ -47,6 +47,8 @@ function timerChange() {
         hours = 0;
         minutes = 0;
         seconds = 0;
+        clearInterval(interval);
+        ringtone.play();
       }
     }
   }

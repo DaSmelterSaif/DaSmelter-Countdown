@@ -66,6 +66,7 @@ div a {
   background-color: rgb(255, 0, 0);
   color: white;
   transition: filter 200ms;
+  cursor: pointer;
 }
 
 .container2 button:hover {
