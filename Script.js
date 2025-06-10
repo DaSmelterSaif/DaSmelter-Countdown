@@ -1,9 +1,9 @@
 let hours = 0,
   minutes = 0,
   seconds = 0;
-let timer = document.getElementById("timer");
+const timer = document.getElementById("timer");
 let interval;
-let ringtone = new Audio("ringtone.mp3");
+const ringtone = new Audio("ringtone.mp3");
 
 //Adds a zero to each of the hours, minutes or seconds if
 //it's under 10. Ex: 01, 05, 09, 10
